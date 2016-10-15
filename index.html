@@ -1,0 +1,63 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Inspire</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+	<link href="https://fonts.googleapis.com/css?family=Amita|Architects+Daughter|Indie+Flower|Kaushan+Script" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body" onload="startTime()">
+	<div class="container-fluid">
+		<div class="row flex">
+			<div class="cardClock text-center">
+				<h1 class="clock" id="clock"></h1>
+			</div>
+			<div id="weather">
+				<!--Weather Append-->
+			</div>
+		</div>
+
+		<div class="row flex" id="todo">
+			<div class="card" >				
+				<form >
+					<input type="text" name="listItem" />
+					
+					<button class="check"><span type="submit" class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+				</form>
+				<ol class="" id="list">
+
+				</ol>
+			</div>
+		</div>
+		<div class="flex row">
+			<div class="card indie" id="quote">
+				<!--Quote Append-->
+			</div>
+		</div>
+	</div>
+	<script id="quoteTemplate">
+		<div>
+			<h2> {{ quote }} </h2>
+		</div>
+	</script>
+
+
+	<script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="app/init.js"></script>
+	<script src="app/components/weather/weather-service.js"></script>
+	<script src="app/components/image/image-service.js"></script>
+	<script src="app/components/quote/quote-service.js"></script>
+	<script src="app/components/todo/todo-service.js"></script>
+
+	<!--Load your scripts below-->
+	<script src="app/components/weather/weather-controller.js"></script>
+	<script src="app/components/image/image-controller.js"></script>
+	<script src="app/components/quote/quote-controller.js"></script>
+	<script src="app/components/todo/todo-controller.js"></script>
+	<script src="app/components/clock/clock-controller.js"></script>
+
+</body>
+
+</html>
