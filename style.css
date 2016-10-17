@@ -1,9 +1,3 @@
-/*font-family: 'Indie Flower', cursive;
-font-family: 'Amita', cursive;
-font-family: 'Kaushan Script', cursive;
-font-family: 'Architects Daughter', cursive;*/
-
-
 body{    
     background-size: 100% 100%;    
     background-repeat: no-repeat;
@@ -11,6 +5,7 @@ body{
     background-position:center;
 }
 
+/*Cards*/
 .cardWeather{       
     background-color:rgba(255, 255, 255, 0.5);
     width:250px;
@@ -18,11 +13,6 @@ body{
     padding:20px;
     border-radius:25%;   
 }
-.flex{
-    display:flex;
-    justify-content:space-around;
-}
-
 .card{
     background-color:rgba(255, 255, 255, 0.5);    
     margin: 15px;
@@ -34,12 +24,23 @@ body{
     flex-direction:column;
     justify-content:center;   
 }
+
+/*Flex styles*/
+.flex{
+    display:flex;
+    justify-content:space-around;
+}
+
+/*Fonts
+font-family: 'Indie Flower', cursive;
+font-family: 'Amita', cursive;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Architects Daughter', cursive;*/
 .clock{
     font-size: 100px;
     font-family: 'Amita', cursive;    
     color: white;
     text-shadow: 1px 1px 2px #622569, 0 0 25px #b8a9c9, 0 0 5px  #5b9aa0;
-
 }
 .indie{
     font-family: 'Kaushan Script', cursive;
@@ -52,6 +53,8 @@ body{
 .arch{
     font-family: 'Architects Daughter', cursive;
 }
+
+/*To do list items*/
 .check{
     background-color: transparent;
     border-color:transparent;

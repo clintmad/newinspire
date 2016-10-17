@@ -5,8 +5,6 @@
 
     weatherService.getWeather(updateWeather)
 
-
-
     function updateWeather(data) {
         var results = JSON.parse(data)
         var weatherElem = $('#weather')
@@ -21,28 +19,16 @@
             <h2>${results.name}</h2>
             <h1 id="c-temp">${tempC}° C</h1><h1 id="f-temp">${tempF}° F</h1>            
             <img src="http://openweathermap.org/img/w/${results.weather[0].icon}.png">
-            <h3>${results.weather[0].description}</h3>
-                    
-        </div>
-        
-        `
-    weatherElem.append(weatherTemplate)
+            <h3>${results.weather[0].description}</h3>                    
+        </div>`
 
-        
+        weatherElem.append(weatherTemplate)
+
         $('#c-temp').hide();
-    
-    
-    //toggle temp
-    $('#weather').on('click', function () {
-        $('#c-temp').toggle();
-        $('#f-temp').toggle();
-    })
 
-    
-}
-    
-    
-    
-    
-    
-}())
+        $('#weather').on('click', function () {
+            $('#c-temp').toggle();
+            $('#f-temp').toggle();
+        })
+    }
+} ())

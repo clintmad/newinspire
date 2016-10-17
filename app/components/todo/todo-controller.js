@@ -7,7 +7,7 @@
 
         $('form').on('submit', function (e) {
             e.preventDefault();
-            var temp = this.listItem.value;            
+            var temp = this.listItem.value;
             todoService.newItem.push(temp);
             todoService.saveTodos(todoService.newItem);
             update();
@@ -30,9 +30,7 @@
                 <span id="${i}" class="delete glyphicon glyphicon-remove" aria-hidden="true"></span></li>`
             }
             listElem.empty().append(taskTemplate, template);
-        }        
+        }
     }
-
     TodoController();
-
 } ())
