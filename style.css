@@ -12,7 +12,7 @@ body{
 }
 
 .cardWeather{       
-    background-color:rgba(255, 255, 255, 0.8);
+    background-color:rgba(255, 255, 255, 0.5);
     width:250px;
     margin: 15px;
     padding:20px;
@@ -20,12 +20,11 @@ body{
 }
 .flex{
     display:flex;
-    flex-direction:row;
     justify-content:space-around;
 }
 
 .card{
-    background-color:rgba(255, 255, 255, 0.8);    
+    background-color:rgba(255, 255, 255, 0.5);    
     margin: 15px;
     padding:20px;
     border-radius:5%;
@@ -47,6 +46,8 @@ body{
     color: white;
     text-shadow: 1px 1px 2px #622569, 0 0 25px #b8a9c9, 0 0 5px  #5b9aa0;
     margin-top:175px;
+    margin-right: 50px;
+    margin-left: 50px;
 }
 .arch{
     font-family: 'Architects Daughter', cursive;
